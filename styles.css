@@ -1,0 +1,327 @@
+/* apikey */
+/* AIzaSyD2hJNmJoy9GkMkSyXBFj-RKwGFL5cdAtE */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;}
+
+h1{
+    font-size: 2.5 rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8 rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.4 rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1 rem;
+    font-weight: 600;
+}
+
+h6{
+    color: #D8D8D8;
+}
+button{
+    font-size:0.8rem;
+    font-weight: 700;
+    outline:none ;
+    border:none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform:uppercase ;
+
+}
+hr:not([size]) {
+    background-color: coral;
+        width: 58px;
+        height: 4px;
+        opacity: 1;
+        border-radius: 2px;
+
+}
+.social {
+    font-size: 2.8rem;
+    padding: 6px 27px 0px 0px;
+    margin: 8px 0;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.social:hover{
+    color:coral;
+}
+
+.star i{
+    color:goldenrod;
+}
+a {
+    
+    text-decoration: none;
+}
+
+
+/* navbar */
+.navbar{
+    font-size: 20px;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3 ease;
+
+}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link.active{
+    color:coral;
+}    
+
+/* mobile nav */ 
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar{    
+    cursor:pointer;
+    transition: 0.2s ease;
+    padding:15px 24px;
+    color:black;
+}
+#bar:hover,#bar:active{
+    color:#fff;
+}
+
+@media only screen and (max-width:991px){
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:active #bar{
+        background-color: coral;
+        border-radius: 4px;
+        color:#fff;
+
+    }
+    #navbarSupportedContent >ul{
+        margin:1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    .navbar-light .navbar-toggler{
+        color:rgba(255, 255, 255, 0.952);
+    
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding:10px 0;
+    }
+
+
+
+    #conatct-form > div{
+
+        flex-flow: wrap;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+#home span{
+    color:coral;
+}
+
+#home {
+    background-image: url("img/back.jpg");
+    width: 100%;
+    height:100vh;
+    background-size:cover;
+    background-position: top 60px center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/* products */
+.product{
+    cursor:pointer;
+    margin-bottom:2rem;
+
+}
+.product img{
+    transition: 0.4 ease;
+
+}
+.product:hover img{
+    opacity:0.7;
+}
+
+.product .buy-btn{
+    background: coral;
+    transform: translateY(20px);
+    opacity:0;
+    transition: 0.4s ease;
+    border-radius: 4px;
+}
+
+.product:hover .buy-btn{
+  
+    transform: translateY(0);
+    opacity:1;
+   
+
+}
+
+/* caraousel */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    margin: 58px 0;
+    /* padding: 0px; */
+    overflow: hidden;
+    height: 480px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom:0;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.imgh{
+    width: 100%!important;
+    height: 440px;
+}
+
+
+
+body > footer{
+    background-color: #222222;
+}
+
+footer h5{
+    color:#D8D8D8;
+    font-weight: 700;
+    font-size:1.2 rem;
+}
+footer li{
+    padding-bottom: 4px;;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color:#999;
+}
+footer li a:hover{
+    font-size: 0.8rem;
+    color:#f7f2f2
+}
+footer p{
+    color:#999;
+    font-size: 0.8rem;
+}
+
+footer .copyright a{
+    width: 38px;
+    height: 38px;
+    margin:0 5px;
+    transition:0.4s ease;
+    text-align: center;
+}
+
+footer .copyright a:hover{
+    
+    color:#fff;
+
+}
+footer .copyright a i{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding:0 6px;
+}
+
+
+/* conatacts style */
+#contact{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin: 52px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.head-contact {
+    margin: -4px 0;
+    padding: 33px 0;
+}
+  
+
+/* contact co1 */
+/* #conatct-form > div > div > i{
+    color:coral;
+    padding: 8px 32px;
+} */
+
+/* #conatct-form > div > div:nth-child(n){
+    
+} */
+
+#conatct-form > div > div > div:nth-child(n) > i{
+    color:coral;
+    padding: 8px 32px;
+}
+
+#conatct-form > div > div > div:nth-child(n){
+    margin: 32px 0px;
+
+}
+
+#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form{
+    flex-direction: column;
+    display: flex;
+    margin:14px;
+}
+
+#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form > input:nth-child(n),#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form > textarea{
+
+    margin-bottom: 18px;
+    padiing:14px;
+
+}
+#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form > input:nth-child(n),#conatct-form > div > div.col-2.col-lg-6.col-md-12.col-12 > form > textarea{
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+
+#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form > button{
+    transition: 0.4s ease;
+}
+#conatct-form > div > div.col-2.col-lg-6.col-md-12 > form > button:hover{
+    background-color: coral;
+    
+}
